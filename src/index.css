@@ -1,0 +1,48 @@
+/* Mobile-first design */
+.container {
+  width: 100%;
+  padding: 10px;
+}
+
+/* For devices larger than 600px */
+@media (min-width: 600px) {
+  .container {
+    width: 80%;
+  }
+}
+
+/* For devices larger than 1024px */
+@media (min-width: 1024px) {
+  .container {
+    width: 60%;
+  }
+
+  /* Hide the hamburger menu on larger screens */
+  .navbar button {
+    display: none;
+  }
+
+  .navbar div {
+    display: flex;
+  }
+}
+
+/* Mobile Navbar Styling */
+@media (max-width: 1024px) {
+  .navbar div {
+    display: none;  /* Hide links on smaller screens */
+  }
+
+  .navbar button {
+    display: block; /* Display the hamburger menu */
+  }
+
+  .navbar .mobile-menu {
+    display: block; /* Show mobile menu when toggled */
+  }
+}
+@media (max-width: 768px) {
+  .nav-links {
+    display: none !important;
+  }
+}

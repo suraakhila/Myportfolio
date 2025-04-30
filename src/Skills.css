@@ -1,0 +1,101 @@
+/* Skills Section */
+.skills-wrapper {
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: transform 0.3s ease;  /* Apply transition effect to wrapper */
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Light Mode */
+.skills-wrapper.light {
+  --bg-color: #fdfdfd;
+  --text-color: #222;
+  background: linear-gradient(to bottom right, #e3f2fd, #ffffff, #ffe0ef);
+}
+
+/* Dark Mode */
+.skills-wrapper.dark {
+  --bg-color: #2c2c2c;
+  --text-color: #f5f5f5;
+  background: linear-gradient(to bottom right, #2c2c2c, #323232, #383838);
+}
+
+/* Skills Card Wrapper */
+.skills-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.skills-wrapper.dark .skills-card {
+  background-color: rgba(34, 34, 34, 0.9);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.03);
+}
+
+/* Skills Title */
+.skills-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Skills Container */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Skill Cards */
+.skill-card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  padding: 1rem;
+  border-radius: 12px;
+  width: 120px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1.5px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+  position: relative; /* Add position relative for transform to work */
+}
+
+/* Light Mode Card Color */
+.skills-wrapper.light .skill-card {
+  --card-bg: #ffffff;
+}
+
+/* Dark Mode Card Color */
+.skills-wrapper.dark .skill-card {
+  --card-bg: #1a1a1a;
+  box-shadow: 0 4px 18px rgba(99, 97, 104, 0.25); /* More visible shadow in dark mode */
+}
+.skills-wrapper.dark .skill-card:hover {
+  --card-bg: #1a1a1a;
+  box-shadow: 0 6px 18px rgba(74, 18, 215, 0.25); /* More visible shadow in dark mode */
+}
+/* Hover Effects for Skill Cards */
+.skill-card:hover {
+  box-shadow: 0 12px 32px rgba(23, 7, 74, 0.25); /* Stronger shadow */
+  transform: translateY(-5px); /* Translate effect on hover */
+  cursor: pointer;
+}
+
+/* Hover Effects for Skills Wrapper */
+.skills-wrapper:hover {
+  transform: translateY(-10px); /* Move the whole section up when hovered */
+  cursor: pointer;
+}
+
+/* Icon Styling */
+.skill-icon {
+  font-size: 3rem;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
