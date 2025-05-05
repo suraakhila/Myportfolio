@@ -67,11 +67,11 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
   const navLinks = (
     <>
-      <NavLink to="/" style={linkStyle}>Home</NavLink>
-      <NavLink to="/about" style={linkStyle}>About</NavLink>
-      <NavLink to="/skills" style={linkStyle}>Skills</NavLink>
-      <NavLink to="/projects" style={linkStyle}>Projects</NavLink>
-      <NavLink to="/contact" style={linkStyle}>Contact</NavLink>
+      <NavLink to="/" style={linkStyle} onClick={() => setMenuOpen(false)}>Home</NavLink>
+      <NavLink to="/about" style={linkStyle} onClick={() => setMenuOpen(false)}>About</NavLink>
+      <NavLink to="/skills" style={linkStyle} onClick={() => setMenuOpen(false)}>Skills</NavLink>
+      <NavLink to="/projects" style={linkStyle} onClick={() => setMenuOpen(false)}>Projects</NavLink>
+      <NavLink to="/contact" style={linkStyle} onClick={() => setMenuOpen(false)}>Contact</NavLink>
     </>
   );
 
